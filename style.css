@@ -1,0 +1,63 @@
+* { box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant', serif;
+    transition: all 1.5s;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+
+img{
+    height: 400px;
+    transition: all 2s;
+}
+
+#Gif{
+    height: 40vh;
+}
+
+button{
+    color: white;
+    background-color: black;
+    height: 60px;
+    width: 90px;
+    font-size: 30px;
+    border: red solid 2px;
+    border-radius: 2em;
+    font-family: 'Cormorant', serif;
+    transition-duration: 0.4s;
+}
+button:hover{
+background-color: red;
+cursor: pointer;
+}
+
+#Main:hover{
+    animation-name: grow;
+    animation-duration: 100s;
+    cursor: zoom-in;
+    overflow: visible;
+}
+
+@keyframes grow{
+    from{
+        height: 400px;
+    }
+    to{
+        height: 10000px;
+    }
+}
+
+footer{
+    height: 15vh;
+}
